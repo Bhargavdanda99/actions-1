@@ -6,16 +6,16 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             -  name: Build stage
-               run: echo"you application start building"
+               run: echo "you application start building"
     Test:
         runs-on: ubuntu-latest
         needs: build
         steps:
             -  name: Test stage
-               run: echo"Test cases are running"
+               run: echo "Test cases are running"
     Deploy:
         runs-on: ubuntu-latest
         needs: Test
         steps:
             -  name: Deploy stage
-               run: echo"Deploying your application"
+               run: echo "Deploying your application"
