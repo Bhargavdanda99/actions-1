@@ -12,3 +12,6 @@ jobs:
          -  name: list all files
             run: ls
             
+         -  name: welcome to kodecloud
+            run: echo "welcome to code cloud"
+            
