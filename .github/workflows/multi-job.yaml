@@ -1,7 +1,6 @@
 name: multijob-workflow
 
 on: push
-
 jobs:
     build:
         runs-on: ununtu-latest
