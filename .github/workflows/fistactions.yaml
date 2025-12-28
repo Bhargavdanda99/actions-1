@@ -1,17 +1,19 @@
-name: my first action
+name: First-action
 
 on: push
 
 jobs:
-    my-first-job:
+    Build:
         runs-on: ubuntu-latest
         steps:
+         -  name: checkout repository
+            uses: actions/checkout@v6
          -  name: welcome message
             run: echo "welcome to github actions"
 
          -  name: list all files
             run: ls
-            
+
          -  name: welcome to kodecloud
             run: echo "welcome to code cloud"
             
